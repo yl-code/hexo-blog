@@ -697,7 +697,7 @@ pace: true
 #pace-theme-minimal
 # For example
 # pace_theme: pace-theme-center-simple
-pace_theme: pace-theme-center-atom
+pace_theme: pace-theme-flash
 
 # Canvas-nest
 canvas_nest: false

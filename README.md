@@ -1,18 +1,12 @@
 # mac 安装 hexo next
 > 
- ### 安装 hexo
+ 先安装 hexo
  npm install -g hexo-cli
 
+ npm install
 
- ### 搜索插件
- npm install hexo-generator-searchdb --save
-
-
- ### 字数统计插件
- npm install hexo-wordcount --save
-
- ### 部署到 GitHub 的插件
- npm install hexo-deployer-git --save
+ ### 启动 
+ hexo s
 
  ### 清除缓存
  hexo clean

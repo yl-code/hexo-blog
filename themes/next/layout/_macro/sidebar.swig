@@ -170,6 +170,7 @@
         </div>
       {% endif %}
 
+      <!-- 太慢了
       {% if site.tags.length > 1 %}
       <script type="text/javascript" charset="utf-8" src="/js/tagcloud.js"></script>
       <script type="text/javascript" charset="utf-8" src="/js/tagcanvas.js"></script>
@@ -182,7 +183,7 @@
           </div>
       </div>
       {% endif %}
-
+      -->
     </div>
   </aside>
 {% endmacro %}

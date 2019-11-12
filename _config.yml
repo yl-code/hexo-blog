@@ -103,7 +103,9 @@ search:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:yanglei0827/yanglei0827.github.io.git
+  repo: 
+    github: git@github.com:yanglei0827/yanglei0827.github.io.git
+    oschina: https://gitee.com/yanglei0827/yanglei.git
   branch: master
 
 

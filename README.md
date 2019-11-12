@@ -18,5 +18,5 @@
  hexo d
 
  ### 新建文章
- hexo new '文章标题'
+ hexo new '文章标题'  
  hexo clean && hexo g && hexo d

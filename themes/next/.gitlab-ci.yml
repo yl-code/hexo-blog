@@ -1,0 +1,14 @@
+image: node:v12.10.0
+pages:
+  cache:
+    paths:
+    - node_modules/
+  script:
+  - npm install hexo-cli -g
+  - npm install
+  - hexo clean && hexo g && hexo d
+  artifacts:
+    paths:
+    - public
+  only:
+  - master

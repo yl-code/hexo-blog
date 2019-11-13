@@ -105,7 +105,7 @@ deploy:
   type: git
   repo: 
     github: git@github.com:yanglei0827/yanglei0827.github.io.git
-    oschina: https://gitee.com/yanglei0827/yanglei.git
+    oschina: git@gitee.com:yanglei0827/yanglei0827.git
   branch: master
 
 

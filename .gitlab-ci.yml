@@ -1,4 +1,4 @@
-image: node:v12.10.0
+image: node:10
 pages:
   cache:
     paths:

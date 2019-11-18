@@ -25,8 +25,8 @@ jobs:
           echo "$HEXO_DEPLOY_PRI" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
-          git config --global user.name "yanglei2"
-          git config --global user.email "1912739092@qq.com"
+          git config --global user.name "yanglei"
+          git config --global user.email "yanglei@yangleideMacBook-Pro.local"
 
       - name: Install dependencies
         run: |

@@ -45,6 +45,6 @@ $ hexo deploy
 
 ```python
 def main():
-    print("hello")
+    print("llllllllll")
 ```
 

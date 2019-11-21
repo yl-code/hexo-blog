@@ -99,16 +99,6 @@ search:
   format: html
   limit: 10000
 
-# Deployment
-## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type: git
-  repo: 
-    github: git@github.com:yanglei0827/yanglei0827.github.io.git
-    oschina: git@gitee.com:yanglei0827/yanglei0827.git
-  branch: master
-
-
 # hexo-tag-cloud
 tag_cloud:
     textFont: Trebuchet MS, Helvetica
@@ -116,3 +106,11 @@ tag_cloud:
     textHeight: 25
     outlineColor: '#555'
     maxSpeed: 0.1
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repo: git@github.com:yanglei0827/yanglei0827.github.io.git
+  branch: master
+

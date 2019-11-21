@@ -223,6 +223,14 @@
 
           {% if theme.post_wordcount.wordcount or theme.post_wordcount.min2read %}
             <div class="post-wordcount">
+              {% if post.top %}
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+              {% if theme.post_meta.item_text %}
+                <span class="post-meta-item-text">顶置</span>
+              {% endif %}
+                <span class="post-meta-divider">|</span>
+              {% endif %}
+
               {% if theme.post_wordcount.wordcount %}
                 {% if not theme.post_wordcount.separated_meta %}
                   <span class="post-meta-divider">|</span>

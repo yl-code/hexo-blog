@@ -1,4 +1,4 @@
-name: HEXO CI
+name: Node CI
 
 on: [push]
 
@@ -17,11 +17,11 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Configuration environment
         env:
-          QQ_RSA: ${{secrets.qq_rsa}}
+          ID_RSA: ${{secrets.id_rsa}}
         run: |
           mkdir -p ~/.ssh/
-          echo "$QQ_RSA" > ~/.ssh/qq_rsa
-          chmod 600 ~/.ssh/qq_rsa
+          echo "$ID_RSA" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           git config --global user.name 'yanglei0827'
           git config --global user.email '1912739092@qq.com'
@@ -31,4 +31,4 @@ jobs:
           npm i
       - name: Deploy hexo
         run: |
-          hexo clean && hexo g
+          hexo g -d

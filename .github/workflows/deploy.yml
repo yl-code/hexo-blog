@@ -1,35 +1,39 @@
-name: CI
+name: CI-HEXO
 
-on:
-  push:
-    branches:
-      - master
+on: [push]
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [10.x]
 
     steps:
-      - name: Checkout source
-        uses: actions/checkout@v1
-        with:
-          ref: hexo
-      - name: Use Node.js ${{ matrix.node_version }}
+      - uses: actions/checkout@v1
+
+      - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
-          version: ${{ matrix.node_version }}
-      - name: Setup hexo
+          node-version: ${{ matrix.node-version }}
+
+      - name: Configuration environment
         env:
-          ACTION_DEPLOY_KEY: ${{ secrets.ACTION_DEPLOY_KEY }}
+          ACTION_DEPLOY_KEY: ${{secrets.ACTION_DEPLOY_KEY}}
         run: |
           mkdir -p ~/.ssh/
           echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
-          git config --global user.email "1912739092@qq.com"
           git config --global user.name "yanglei0827"
+          git config --global user.email "1912739092@qq.com"
+
+      - name: Install dependencies
+        run: |
           npm install hexo-cli -g
           npm install
-      - name: Hexo deploy
+
+      - name: Deploy hexo
         run: |
           hexo clean
           hexo d

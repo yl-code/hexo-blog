@@ -14,7 +14,7 @@
  ### 产生静态网页
  hexo g
 
- ### 部署到GitHub page上
+ ### 部署
  hexo d
 
  ### 新建文章

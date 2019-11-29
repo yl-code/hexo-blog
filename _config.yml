@@ -111,6 +111,6 @@ tag_cloud:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:yanglei0827/yanglei0827.github.io.git
+  repo: git@github.com:yl-code/yl-code.github.io.git
   branch: master
 

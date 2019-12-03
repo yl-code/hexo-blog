@@ -102,9 +102,9 @@ search:
 # hexo-tag-cloud
 tag_cloud:
     textFont: Trebuchet MS, Helvetica
-    textColor: '#fff'
+    textColor: '#2e2e2e'
     textHeight: 25
-    outlineColor: '#555'
+    outlineColor: '#f3f3f3'
     maxSpeed: 0.1
 
 # Deployment

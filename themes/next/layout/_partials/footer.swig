@@ -33,6 +33,7 @@
 
 <script type="text/javascript">
 document.getElementsByClassName("popup-trigger")[0].removeAttribute("target");
+document.getElementsByClassName("site-state-item site-state-posts")[0].firstElementChild.setAttribute("href","/archives");
 </script>
 
 {% if theme.footer.custom_text %}

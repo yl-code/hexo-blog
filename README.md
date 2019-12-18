@@ -3,20 +3,20 @@
 先安装 hexo  
 npm install -g hexo-cli
 
- npm install
+npm install
 
- ### 启动 
- hexo s
+### 启动 
+hexo s
 
- ### 清除缓存
- hexo clean
+### 清除缓存
+hexo clean
 
- ### 产生静态网页
- hexo g
+### 产生静态网页
+hexo g
 
- ### 部署
- hexo d
+### 部署
+hexo d
 
- ### 新建文章
- hexo new '文章标题'  
- hexo clean && hexo g && hexo d
+### 新建文章
+hexo new '文章标题'  
+hexo clean && hexo g && hexo d

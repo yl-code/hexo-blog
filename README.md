@@ -1,6 +1,6 @@
 # mac 安装 hexo next
 > 
- 先安装 hexo
+ 先安装 hexo  
  npm install -g hexo-cli
 
  npm install

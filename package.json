@@ -33,7 +33,8 @@
     "login": "yl-code",
     "repo": "Big Frontend",
     "mdNameFormat": "title",
-    "postPath": "source/_posts",
+    "postPath": "source/_posts/yuque",
+    "cachePath": "yuque.json",
     "onlyPublished": false
   }
 }

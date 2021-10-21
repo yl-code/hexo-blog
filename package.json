@@ -31,7 +31,7 @@
   "yuqueConfig": {
     "baseUrl": "https://www.yuque.com/api/v2",
     "login": "yl-code",
-    "repo": "Big Frontend",
+    "repo": "bf",
     "mdNameFormat": "title",
     "postPath": "source/_posts/yuque",
     "cachePath": "yuque.json",

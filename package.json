@@ -31,9 +31,9 @@
   "yuqueConfig": {
     "baseUrl": "https://www.yuque.com/api/v2",
     "login": "yl-code",
-    "repo": "py",
+    "repo": "js",
     "mdNameFormat": "title",
-    "postPath": "source/_posts",
+    "postPath": "_posts",
     "cachePath": "yuque.json",
     "onlyPublished": false,
     "onlyPublic": false

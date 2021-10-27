@@ -33,7 +33,7 @@
     "login": "yl-code",
     "repo": "js",
     "mdNameFormat": "title",
-    "postPath": "_posts",
+    "postPath": "source/_posts",
     "cachePath": "yuque.json",
     "onlyPublished": false,
     "onlyPublic": false

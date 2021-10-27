@@ -35,7 +35,7 @@
     "mdNameFormat": "title",
     "postPath": "source/_posts",
     "cachePath": "yuque.json",
-    "onlyPublished": false,
-    "onlyPublic": false
+    "onlyPublished": true,
+    "onlyPublic": true
   }
 }
